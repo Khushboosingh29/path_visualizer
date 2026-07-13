@@ -1,0 +1,53 @@
+git remote set-url origin https://github.com/Khushboosingh29/path_visualizer.gitbody::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/road1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;  /* very faint */
+  z-index: -1;   /* keeps it behind everything */
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative; /* REQUIRED so ::before works correctly */
+}
+
+div, canvas {
+    
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+div {
+    margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    width: 60vw; 
+    height: 70vh; 
+}
+
+
+
+
+
+
